@@ -1,2 +1,2 @@
 # XinHuoDatabaseDesign
-芯火优创小程序数据库设计迭代
+`XinHuo`Wechat applet database design iteration record.
