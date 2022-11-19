@@ -42,18 +42,15 @@
 
 ## article 文章
 
-| Field    | FieldName    | Type    | Bind | Remark                                                       |
-| -------- | ------------ | ------- | ---- | ------------------------------------------------------------ |
-| id       | id           | varchar | PK   |                                                              |
-| 标题     | title        | varchar |      |                                                              |
-| 时间     | time         | varchar |      |                                                              |
-| 作者     | writer       | varchar |      |                                                              |
-| 内容     | content      | varchar |      |                                                              |
-| 文章类型 | type         | varchar |      | **学子获奖<br/>城院动态<br/>主题活动<br/>头条<br/>融媒思政<br/>党史人物信息<br/>党员风采<br/>党史故事<br/>活动广场** |
-| 图片链接 | images       | varchar |      |                                                              |
-| 所属组织 | organization | varchar |      |                                                              |
-| 学生姓名 | stuName      | varchar |      |                                                              |
-| 学生班级 | stuClass     | varchar |      |                                                              |
+| Field    | FieldName | Type     | Bind | Remark                                                       |
+| -------- | --------- | -------- | ---- | ------------------------------------------------------------ |
+| id       | id        | varchar  | PK   |                                                              |
+| 标题     | title     | varchar  |      |                                                              |
+| 时间     | time      | varchar  |      |                                                              |
+| 作者     | writer    | varchar  |      |                                                              |
+| 内容     | content   | longtext |      |                                                              |
+| 文章类型 | type      | varchar  |      | **学子获奖<br/>城院动态<br/>主题活动<br/>头条<br/>融媒思政<br/>党史人物信息<br/>党员风采<br/>党史故事<br/>活动广场** |
+| 图片链接 | images    | varchar  |      |                                                              |
 
 
 
