@@ -191,7 +191,7 @@
 | 学生学号 | studentNumber | varchar  |      |                                        |
 | 答卷内容 | content       | longtext |      |                                        |
 | 分数     | score         | varchar  |      |                                        |
-| 答卷类型 | type          | varchar  |      | **每日答题<br/>每周答题<br/>专项答题** |
+| 答卷类型 | type          | varchar1 |      | **每日答题<br/>每周答题<br/>专项答题** |
 | 答题时间 | date          | datetime |      |                                        |
 
 
@@ -204,6 +204,7 @@
 | 卷名     | title     | varchar  |      |        |
 | 类型     | type      | varchar  |      |        |
 | 练习内容 | content   | longtext |      |        |
+| 答题时间 | data      | datetime |      |        |
 
 
 
