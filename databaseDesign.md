@@ -19,7 +19,7 @@
 | ------------ | --------- | -------- | ---- | ------------------------------------------------ |
 | id           | id        | varchar  | PK   |                                                  |
 | 考试名       | title     | varchar  |      |                                                  |
-| 考试对象     | object    | varchar  |      | **入党积极分子<br />发展对象**<br />**党校考试** |
+| 考试对象     | type      | varchar  |      | **入党积极分子<br />发展对象**<br />**党校考试** |
 | 考试时间     | date      | date     |      |                                                  |
 | 考卷内容     | content   | longtext |      |                                                  |
 | 是否结束考试 | hasDone   | tinyint  |      |                                                  |
@@ -27,8 +27,6 @@
 
 
 ## exam_answer_sheet 学生考试答卷
-
-
 
 | Field    | FieldName     | Type     | Bind | Remark                                                   |
 | -------- | ------------- | -------- | ---- | -------------------------------------------------------- |
@@ -39,6 +37,8 @@
 | 分数     | score         | varchar  |      |                                                          |
 | 答卷类型 | type          | varchar  |      | **入党积极分子考试<br />发展对象考试**<br />**党校考试** |
 | 考试日期 | date          | datetime |      |                                                          |
+
+
 
 ## article 文章
 
@@ -135,8 +135,6 @@
 
 ​	
 
-
-
 ## multiple_option_question 多选题
 
 | Field    | FieldName  | Type    | Bind | Remark |
@@ -151,13 +149,15 @@
 
 ## organization_meeting_record 组织会议记录
 
-| Field    | FieldName    | Type    | Bind | Remark                     |
-| -------- | ------------ | ------- | ---- | -------------------------- |
-| id       | id           | varchar | PK   |                            |
-| 会议类型 | type         | varchar |      | **党代表会<br />党小组会** |
-| 参会人数 | participants | varchar |      |                            |
-| 会议时间 | time         | date    |      |                            |
-| 会议主题 | title        | varchar |      |                            |
+| Field    | FieldName    | Type     | Bind | Remark                     |
+| -------- | ------------ | -------- | ---- | -------------------------- |
+| id       | id           | varchar  | PK   |                            |
+| 会议类型 | type         | varchar  |      | **党代表会<br />党小组会** |
+| 参会人数 | participants | int      |      |                            |
+| 应到人数 | participants | int      |      |                            |
+| 会议时间 | time         | date     |      |                            |
+| 会议主题 | title        | varchar  |      |                            |
+| 会议内容 | content      | longtext |      |                            |
 
 
 
@@ -169,6 +169,7 @@
 | 发布时间 | time      | datetime |      |        |
 | 新闻主题 | title     | varchar  |      |        |
 | 作者     | author    | varchar  |      |        |
+| 新闻内容 | content   | longtext |      |        |
 
 
 
